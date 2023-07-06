@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+:root{
+    --pageColor: #cbd5e1;
+    --boardColor: #1e293b; 
+    --fontColor: #6b7280;
+    --gridColor: #9ca3af;
+    font-family: 'Roboto Mono', monospace;
+}
+
+body{
+    background-color: var(--pageColor);
+}
+.main{
+    margin: 0;
+    padding: 10px;
+    width: 100vw;
+    height: 100vh;
+   display: flex;
+   gap: 50px;
+   flex-direction: column;
+   align-items: center;
+}
+
+.container{
+    height: 500px;
+    width: 500px;
+    padding: 5px;
+    background-color: var(--boardColor);
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(100px, 1fr));
+}
+
+.left{
+    border-right: 1px solid var(--gridColor);
+}
+
+.right{
+    border-left: 1px solid var(--gridColor);
+}
+
+.top{
+    border-bottom: 1px solid var(--gridColor);
+}
+
+.bottom{
+    border-top: 1px solid var(--gridColor);
+}
+
+#gridSpace{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--fontColor);
+    font-size: 275%;
+    font-weight: bolder;
+}
+
+#headings{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
